@@ -132,7 +132,7 @@ const Weather = () => {
 
 
         </div>
-      ):(<div style={{width:"90%",fontSize:"40px",fontWeight:"bold"}}>Loading...please wait</div>) }
+      ):(<div className='loading-data' style={{fontSize:"40px",fontWeight:"bold"}}>Loading...please wait</div>) }
     </div>
   );
 };

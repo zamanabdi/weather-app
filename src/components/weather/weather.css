@@ -109,8 +109,22 @@
     gap: 5px;
 }
 
+.loading-data{
+    width: 500px;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 480px) {
     .weather-info{
         width: 90%;
+    }
+
+    .loading-data{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
   }
