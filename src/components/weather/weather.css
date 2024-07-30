@@ -1,0 +1,116 @@
+.weather-screen{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 1s;
+    position: relative;
+    background: rgba(0,0,0,0.2) url('../../assets/rain.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
+}
+
+.medium{
+    background: rgba(0,0,0,0.2) url('../../assets/medium.jpg') no-repeat center center/cover;
+    
+}
+
+.freezing{
+    background: rgba(0,0,0,0.2) url('../../assets/cold.jpg') no-repeat center center/cover;
+    
+}
+
+.extreme-hot{
+    background: rgba(0,0,0,0.2) url('../../assets/extreme-hot.jpg') no-repeat center center/cover;
+    
+}
+.moderate{
+    background: rgba(0,0,0,0.2) url('../../assets/mild-cold.jpg') no-repeat center center/cover;
+    
+}
+
+.rain{
+    background: rgba(0,0,0,0.2) url('../../assets/raining.gif') no-repeat center center/cover;
+}
+
+
+
+
+
+
+
+.weather-info{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    top:150px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.city{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.currentDate{
+    /* border: 1px solid yellow; */
+    height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currentTemp{
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.speed-humid{
+    /* border: 2px solid blueviolet; */
+    margin-top: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.speed-humid span{
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .weather-info{
+        width: 90%;
+    }
+  }
